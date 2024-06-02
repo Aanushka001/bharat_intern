@@ -1,0 +1,266 @@
+/* Import Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+
+/* General Styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+body {
+  background-color: #f5f5f5;
+}
+
+/* Header and Navigation */
+.header_section {
+  background-color: #333;
+  padding: 20px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.nav-link {
+  color: #fff;
+  transition: color 0.3s ease;
+}
+
+.nav-link:hover {
+  color: #ffb347;
+}
+
+/* Main Section */
+#main {
+  padding: 8px 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#page {
+  max-width: 1200px;
+  margin: 0 0;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+}
+
+#page > img {
+  width: 300px;
+  height: 300px;
+  border-radius: 50%;
+  object-fit: cover;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+#text {
+  max-width: 600px;
+  padding: 60px;
+}
+
+#text h1 {
+  font-size: 48px;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+#text h2 {
+  font-size: 32px;
+  margin-bottom: 20px;
+  color: #555;
+}
+
+#text h4 {
+  font-size: 18px;
+  line-height: 1.6;
+  color: #777;
+  margin-bottom: 40px;
+}
+
+#buttons {
+  display: flex;
+  gap: 24px;
+}
+
+#buttons button {
+  padding: 12px 24px;
+  background-color: #ffb347;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+#buttons button:hover {
+  background-color: #e69a2d;
+}
+
+#buttons button a {
+  color: #fff;
+  text-decoration: none;
+}
+
+/* Skills Section */
+#page1 {
+  background-color: #333;
+  color: #fff;
+  padding: 80px 0;
+}
+
+#page1 #right {
+  max-width: 1200px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+#page1 #text1 h1 {
+  font-size: 36px;
+  margin-bottom: 40px;
+}
+
+#page1 #text1 h4 {
+  font-size: 18px;
+  line-height: 1.6;
+  max-width: 800px;
+  margin: 0 auto 60px;
+}
+
+#left {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 30px;
+}
+.box {
+  background-color: #444;
+  padding: 12px;
+  border-radius: 8px;
+  max-width: 200px; /* reduced width */
+  text-align: center;
+  width: 25%;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+  margin: 20px; /* added margin to create space between boxes */
+}
+
+.box:hover {
+  transform: translateY(-10px);
+}
+
+.box h1 {
+  font-size: 24px;
+  margin-bottom: 12px;
+}
+
+.box p {
+  font-size: 13px;
+  line-height: 1.0;
+  /* box-w */
+  color: #ccc;
+}
+
+/* Projects Section */
+#page2 {
+  padding: 80px 0;
+  text-align: center;
+}
+
+#page2 #text4 h1 {
+  font-size: 36px;
+  margin-bottom: 40px;
+  color: #333;
+}
+
+#project {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 40px;
+}
+
+.projects {
+  max-width: 300px;
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  transition: transform 0.3s ease;
+}
+
+.projects:hover {
+  transform: translateY(-10px);
+}
+
+.projects #text3 h1 {
+  font-size: 24px;
+  padding: 20px;
+  background-color: #ffb347;
+  color: #fff;
+}
+
+.projects #image img {
+  width: 100%;
+  height: auto;
+}
+
+/* Contact Section */
+.end {
+  background-color: #333;
+  color: #fff;
+  padding: 80px 0;
+  text-align: center;
+}
+
+.contct-me h2 {
+  font-size: 36px;
+  margin-bottom: 20px;
+}
+
+.contct-me .collab {
+  font-size: 24px;
+  margin-bottom: 40px;
+}
+
+.contct-me p {
+  font-size: 18px;
+  margin-bottom: 40px;
+}
+
+.btn {
+  display: inline-block;
+  margin: 0 20px;
+  transition: transform 0.3s ease;
+}
+
+.btn:hover {
+  transform: translateY(-5px);
+}
+
+.btn img {
+  width: 40px;
+  height: 40px;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+  #page {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  #page > img {
+    margin-bottom: 40px;
+  }
+
+  #text {
+    padding: 20px;
+  }
+
+  #buttons {
+    justify-content: center;
+  }
+}
